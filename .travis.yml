@@ -1,0 +1,8 @@
+#!/bin/bash
+bash <(curl -s https://detect.synopsys.com/detect.sh) \
+--blackduck.url="https://poc102.blackduck.synopsys.com/" \
+--blackduck.api.token="NjE3NDkyN2QtMTkwOC00YjUzLTk0Y2QtNzE5MWE2MTExZGMzOmQ4OTQ1NzZjLWJkNTQtNDc4OC1iOTM0LTNkZDE0OWI1MTMyYQ==" \
+--detect.project.name="JenkinsMavenJava" \
+--detect.project.version.name="${BUILD_TAG}" \
+--detect.risk.report.pdf=true \
+--blackduck.trust.cert=true
